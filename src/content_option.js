@@ -1,17 +1,17 @@
-const logotext = "JOHN";
+const logotext = "Jeffrey Ding";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Jeffrey Ding",
+    description: "I’m Jeffrey Ding software engineer _ Developer with experience in full stack and Machine Learning",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Jeffrey Ding",
     animated: {
         first: "I love coding",
         second: "I code cool websites",
-        third: "I develop mobile apps",
+        third: "I love Machine Learning",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    description: "I'm a recent-grad software engineer from Harvard, with a focus on full-stack development and Machine Learning",
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
