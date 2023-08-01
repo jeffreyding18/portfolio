@@ -74,6 +74,39 @@ const services = [{
 
 const dataportfolio = [{
         img: "https://picsum.photos/400/?grayscale",
+        description: "The wisdom of life consists in the elimination of non-essentials. Lorem ipsum.",
+        link: "#",
+    }, 
+    {
+        img: "https://picsum.photos/400/300/?grayscale",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "#",
+    },
+    {
+        img: "https://picsum.photos/400/?grayscale",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "#",
+    },
+    {
+        img: "https://picsum.photos/400/600/?grayscale",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "#",
+    },
+    {
+        img: "https://picsum.photos/400/300/?grayscale",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "#",
+    },
+    {
+        img: "https://picsum.photos/400/700/?grayscale",
+        description: "The wisdom of life consists in the elimination of non-essentials.",
+        link: "#",
+    }
+];
+
+/*
+const dataportfolio = [{
+        img: "https://picsum.photos/400/?grayscale",
         description: "The wisdom of life consists in the elimination of non-essentials.",
         link: "#",
     },
@@ -134,6 +167,7 @@ const dataportfolio = [{
         link: "#",
     },
 ];
+*/
 
 const contactConfig = {
     YOUR_EMAIL: "name@domain.com",

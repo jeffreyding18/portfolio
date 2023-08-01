@@ -3,8 +3,11 @@ import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
+import { useState } from "react";
 
 export const Portfolio = () => {
+  const [rowNum, setRowNum] = useState(0);
+
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -19,7 +22,50 @@ export const Portfolio = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-        <div className="mb-5 po_items_ho">
+        {dataportfolio.map((data, i) => {
+          if (i % 2 == 0) {
+            return (
+              <div className="mb-5 portfolio-entry" key={i}>
+                <Row>
+                  <Col md={4}>
+                    <div className="portfolio-img">
+                      <img src={data.img} alt="" className="fit-image" />
+                    </div>
+                  </Col>
+                  <Col md={8}>
+                    <div className="portfolio-info">
+                      <p> {data.description} </p>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            );
+          } else {
+            return (
+              <div className="mb-5 portfolio-entry" key={i}>
+                <Row>
+                  <Col md={8}>
+                    <div className="portfolio-info">
+                      <p> {data.description} </p>
+                    </div>
+                  </Col>
+                  <Col md={4}>
+                    <div className="portfolio-img">
+                      <img src={data.img} alt="" className="fit-image" />
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            );
+          }
+        })}
+      </Container>
+    </HelmetProvider>
+  );
+};
+
+/*
+<div className="mb-5 po_items_ho">
           {dataportfolio.map((data, i) => {
             return (
               <div key={i} className="po_item">
@@ -32,7 +78,4 @@ export const Portfolio = () => {
             );
           })}
         </div>
-      </Container>
-    </HelmetProvider>
-  );
-};
+*/
