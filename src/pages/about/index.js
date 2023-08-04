@@ -31,7 +31,9 @@ export const About = () => {
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <div>
-              <p>{dataabout.aboutme}</p>
+              {dataabout.aboutme.map((data, i) => {
+                return <p> {data} </p>;
+              })}
             </div>
           </Col>
         </Row>
