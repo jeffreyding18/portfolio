@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.155d0bf1.css",
-    "main.js": "/portfolio/static/js/main.c34500c7.js",
+    "main.css": "/portfolio/static/css/main.9445e4ab.css",
+    "main.js": "/portfolio/static/js/main.494b7db8.js",
     "static/media/pf.jpg": "/portfolio/static/media/pf.de328215ade328176f05.jpg",
+    "static/media/JDing_Resume.pdf": "/portfolio/static/media/JDing_Resume.9f23ee2bbef0d0e19090.pdf",
     "index.html": "/portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.155d0bf1.css",
-    "static/js/main.c34500c7.js"
+    "static/css/main.9445e4ab.css",
+    "static/js/main.494b7db8.js"
   ]
 }
