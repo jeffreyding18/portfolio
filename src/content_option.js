@@ -217,7 +217,7 @@ const contactConfig = {
 };
 
 const socialprofils = {
-  github: "https://github.com",
+  github: "https://github.com/jeffreyding18",
   facebook: "https://facebook.com",
   linkedin: "https://linkedin.com/in/jeffreyding18/",
   twitter: "https://twitter.com",
