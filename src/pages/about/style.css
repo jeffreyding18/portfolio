@@ -1,10 +1,24 @@
 .sec_sp {
-    margin-bottom: calc(3rem + 5.128vw)
+    margin-bottom: calc(2rem + 1.128vw)
 }
 
 .table td,
 .table th {
     color: var(--text-color);
+}
+
+.sec_sp p {
+    padding-top: 15px;
+}
+.work-toprow td {
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+}
+
+.work-desc td li {
+    font-size: 15px;
+    margin: 2px;
+    font-style:italic;
 }
 
 .t_border {

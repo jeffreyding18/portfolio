@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
 import profileImg from '../../assets/images/pf.jpg'
+import Footer from '../../components/Footer';
 
 export const Home = () => {
   return (
@@ -36,8 +37,16 @@ export const Home = () => {
                 </h1>
                 <p className="mb-1x">{introdata.description}</p>
                 <div className="intro_btn-action pb-5">
+                <Link to="/about">
+                    <div id="button_p" className="ac_btn btn">
+                      About me
+                      <div className="ring one"></div>
+                      <div className="ring two"></div>
+                      <div className="ring three"></div>
+                    </div>
+                  </Link>
                   <Link to="/portfolio" className="text_2">
-                    <div id="button_p" className="ac_btn btn ">
+                    <div id="button_h" className="ac_btn btn ">
                       My Portfolio
                       <div className="ring one"></div>
                       <div className="ring two"></div>
@@ -45,8 +54,8 @@ export const Home = () => {
                     </div>
                   </Link>
                   <Link to="/contact">
-                    <div id="button_h" className="ac_btn btn">
-                      Contact Me
+                    <div id="button_p" className="ac_btn btn">
+                      Contact me
                       <div className="ring one"></div>
                       <div className="ring two"></div>
                       <div className="ring three"></div>

@@ -2,7 +2,7 @@ const logotext = "Jeffrey Ding";
 const meta = {
   title: "Jeffrey Ding",
   description:
-    "I’m Jeffrey Ding software engineer _ Developer with experience in full stack and Machine Learning",
+    "I’m Jeffrey Ding, a Software Engineer with experience in full stack development and Machine Learning",
 };
 
 const introdata = {
@@ -25,27 +25,84 @@ const introdata = {
 const dataabout = {
   title: "More about me",
   aboutme: [
-    "Thanks for stopping by my page! My name is Jeffrey, and I'm a recent-grad from Harvard with a passion for all things Tech. My background is in full-stack development and Machine Learning, \
-    however I also have experience in business development and consulting.",
-    "Outside of work, I've been a lifelong musician, enjoying singing, piano, and guitar in my free time. I also have a love for traveling, with over 40 countries visited. Besides these \
-    I'm also an amateur photographer who loves portrait and astrophotography!",
+    "Thanks for stopping by my page! My name is Jeffrey Ding, and I'm a recent-grad from Harvard with a passion for all things Tech. \
+    My technical background is in full-stack development and Machine Learning, however I also have experience in \
+    business development and consulting. I am currently finishing a 6-month Machine Learning bootcamp and actively \
+    looking for Software Engineering and Machine Learning roles!",
+    "Outside of work, I've been a lifelong musician, enjoying singing, piano, and guitar in my free time. \
+    Last summer, I spent 80+ days traveling to 20+ countries, performing with my acapella group (The Harvard Krokodiloes) for \
+    audiences around the world. Outside of my musical endeavors, I'm also an avid tennis player, photographer, and love cooking!"
   ],
 };
+
+const educationList = [
+  {
+    school: "UCSD Extended Studies",
+    major: "Machine Learning Bootcamp",
+    location: "Remote",
+    desc: "-",
+    date_start: "04/2023",
+    date_end: "10/2023",
+  },
+  {
+    school: "Harvard University",
+    major: "Computer Science",
+    location: "Boston, MA",
+    desc: "-",
+    date_start: "09/2018",
+    date_end: "05/2022",
+  },
+  {
+    school: "The Thacher School",
+    major: "-",
+    location: "Ojai, CA",
+    desc: "-",
+    date_start: "09/2014",
+    date_end: "05/2022",
+  },
+];
+
 const worktimeline = [
   {
     jobtitle: "Tech Development",
     where: "TeamFirst",
+    date_start: "09/2022",
+    date_end: "01/2023",
     date: "2022",
+    desc: ["Designed and coded a career journaling website prototype, with data collection and visualization through Javascript",
+    "Aggregated unstructured data from various sources into a unified data pipeline for onboarding new community members",
+    "Onboarded member data to recruiting CRM, leveraging AI to match members to suitable positions",
+    "Restructured user-facing data inputs, to streamline data organization and improve readability of member information"],
   },
   {
     jobtitle: "Software Engineering Intern",
     where: "Meta",
+    date_start: "06/2021",
+    date_end: "08/2021",
     date: "2021",
+    desc: ["Worked full-stack on the Instagram team to implement a UI tool for efficiently  entering and modifying information into a back-end database",
+    "Designed visual elements of the tool with a focus on usability",
+    "Substantial use of JS and Hack"],
   },
   {
     jobtitle: "Software Engineering Intern",
     where: "Amazon",
+    date_start: "06/2020",
+    date_end: "08/2020",
     date: "2020",
+    desc: ["Designed and created a tool for engineers to efficiently process and analyze large amounts of customer data",
+    "Documented re-usable procedure for using the tool to identify underperforming search queries, as a way to identify problems with the search engine",
+    "Built using a combination of PySpark & SQL"],
+  },
+  {
+    jobtitle: "Consulting",
+    where: "Harvard CBE",
+    date_start: "01/2019",
+    date_end: "05/2021",
+    date: "2019",
+    desc: ["Served as an analyst for one semester, an associate for one semester, and a case team leader for two semesters",
+      "Worked on cases involving AI, Machine Learning, and Chatbots, with a whitepaper deliverable and final presentation",
+    "Led cases with one the world’s largest biotech companies and a biotech startup focused on vaccine development. Focused on blockchain and market research, and led the writing of a whitepaper as well as presentation"],
   },
 ];
 
@@ -71,6 +128,24 @@ const skills = [
     value: 60,
   },
 ];
+
+const languages = [
+  {
+    name: "English",
+    value: 100,
+    desc: "Native",
+  },
+  {
+    name: "Japanese",
+    value: 70,
+    desc: "Conversationally Fluent",
+  },
+  {
+    name: "Chinese",
+    value: 70,
+    desc: "Conversationally Fluent",
+  },
+]
 
 const services = [
   {
@@ -158,4 +233,6 @@ export {
   contactConfig,
   socialprofils,
   logotext,
+  educationList,
+  languages,
 };

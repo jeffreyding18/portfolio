@@ -22,7 +22,28 @@ export const Portfolio = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-        {dataportfolio.map((data, i) => {
+        <p style={{fontSize: '18px', fontStyle: 'italic'}}> My projects are still in the works. Please check back later! </p>
+      </Container>
+    </HelmetProvider>
+  );
+};
+
+/*
+<div className="mb-5 po_items_ho">
+          {dataportfolio.map((data, i) => {
+            return (
+              <div key={i} className="po_item">
+                <img src={data.img} alt="" />
+                <div className="content">
+                  <p>{data.description}</p>
+                  <a href={data.link}>view project</a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+{dataportfolio.map((data, i) => {
           if (i % 2 == 0) {
             return (
               <div className="mb-5 portfolio-entry" key={i}>
@@ -59,23 +80,4 @@ export const Portfolio = () => {
             );
           }
         })}
-      </Container>
-    </HelmetProvider>
-  );
-};
-
-/*
-<div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" />
-                <div className="content">
-                  <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
-                </div>
-              </div>
-            );
-          })}
-        </div>
 */
