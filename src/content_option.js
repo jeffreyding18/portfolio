@@ -147,6 +147,28 @@ const languages = [
   },
 ]
 
+const dataportfolio = [
+  {
+    img: "https://picsum.photos/400/?grayscale",
+    description:
+      "Final project for my Machine Learning bootcamp with UCSD. Comparing various models and datasets and their performance \
+      in the stock market. Still a work in progress, please check back later! ",
+    link: "#",
+    title: "ML in the stock market",
+    date: "10/2023",
+    author: "Jeffrey Ding",
+  },
+  {
+    img: "https://picsum.photos/400/?grayscale",
+    description:
+      "A to-do list fully built in React. Currently in the works, please check back later!",
+    link: "#",
+    title: "React to-do list",
+    date: "08/2023",
+    author: "Jeffrey Ding",
+  },
+];
+
 const services = [
   {
     title: "UI & UX Design",
@@ -162,45 +184,6 @@ const services = [
     title: "Wordpress Design",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
-  },
-];
-
-const dataportfolio = [
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials. Lorem ipsum.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/600/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/700/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
   },
 ];
 
