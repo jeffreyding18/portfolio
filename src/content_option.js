@@ -150,10 +150,18 @@ const languages = [
 const dataportfolio = [
   {
     img: "https://picsum.photos/400/?grayscale",
+    description: "A basic react application to store and add new recipes. Primary purpose so far has been to expose myself to a variety of React technologies. More features such as parsing from a photo, favoriting recipes, and searching by ingredient, coming later! ",
+    link: "/portfolio/recipeDemo/",
+    title: "React Recipe List",
+    date: "08/2023",
+    author: "Jeffrey Ding",
+  },
+  {
+    img: "https://picsum.photos/400/?grayscale",
     description:
       "Final project for my Machine Learning bootcamp with UCSD. Comparing various models and datasets and their performance \
       in the stock market. Still a work in progress, please check back later! ",
-    link: "#",
+    link: null,
     title: "ML in the stock market",
     date: "10/2023",
     author: "Jeffrey Ding",
@@ -162,7 +170,7 @@ const dataportfolio = [
     img: "https://picsum.photos/400/?grayscale",
     description:
       "A to-do list fully built in React. Currently in the works, please check back later!",
-    link: "#",
+    link: null,
     title: "React to-do list",
     date: "08/2023",
     author: "Jeffrey Ding",
@@ -205,7 +213,28 @@ const socialprofils = {
   linkedin: "https://linkedin.com/in/jeffreyding18/",
   twitter: "https://twitter.com",
 };
+
+const recipelistC = [
+  {
+      name: "Chicken soup",
+      description: "A hearty chicken soup for the winter!",
+      favorite: false,
+      ingredients: ["Chicken", "Chicken Stock", "Water", "Seasonings"],
+      instructions: ["Boil Water", "Add Chicken Stock", "Add Chicken", "Season", "Serve"],
+      img: "/public/recipeDemo/images/chickenSoup.jpg", 
+  },
+  {
+      name: "Steak",
+      description: "Tried and true!",
+      favorite: false,
+      ingredients: ["Chicken", "Chicken Stock", "Water", "Seasonings"],
+      instructions: ["Boil Water", "Add Chicken Stock", "Add Chicken", "Season", "Serve"],
+      img: "/public/recipeDemo/images/chickenSoup.jpg", 
+  },
+];
+
 export {
+  recipelistC,
   meta,
   dataabout,
   dataportfolio,

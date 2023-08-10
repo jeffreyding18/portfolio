@@ -1,0 +1,91 @@
+.card {
+  display: flex;
+  justify-content: center;
+  min-height: 200px;
+  width: 300px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: var(--primary-color);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  margin-bottom: 1rem;
+}
+
+.error {
+  border:1px solid red;
+}
+
+.recipe-img-div {
+  height: 200px;
+  padding: 0px 1px;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-text{
+  min-height: 100px;
+  font-weight: 100;
+}
+
+.recipe-group {
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.recipe-body {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.recipe-form-input {
+  width: 80%;
+}
+
+.recipe-banner {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.recipe-banner-h1 {
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+
+.recipe-demo-div {
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: var(--accent-color-1);
+  padding-bottom: 3%;
+}
+
+.extra-info {
+  display: none;
+  line-height: 30px;
+  font-size: 12px;
+	position: absolute;
+  top: 0;
+  left: 50px;
+}

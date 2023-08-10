@@ -94,7 +94,7 @@ function CursorCore({
     outerAlpha = 0.3,
     innerSize = 8,
     outerSize = 8,
-    outerScale = 6,
+    outerScale = 1,
     innerScale = 0.6,
     trailingSpeed = 8,
     clickables = [

@@ -46,6 +46,9 @@ export const Portfolio = () => {
               <p>
                 {data.description}
               </p>
+              {data.link && (
+                  <a className="portfolio-link" href={data.link}> Learn more! </a>
+                )}
             </div>
             <hr className="t_border my-4 ml-0 text-left" />
           </div>
