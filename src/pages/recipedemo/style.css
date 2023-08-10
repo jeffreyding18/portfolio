@@ -1,0 +1,146 @@
+:root {
+  --base: 1.35; 
+  --background: var(--primary-color);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  min-height: 200px;
+  width: 300px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: var(--primary-color);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  margin-bottom: 1rem;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.recipe-img-div {
+  height: 200px;
+  padding: 0px 1px;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  min-height: 100px;
+  font-weight: 100;
+}
+
+.recipe-group {
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.recipe-body {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.recipe-form-input {
+  width: 80%;
+}
+
+.recipe-desc {
+  height: 100px;
+  line-height: var(--base);
+}
+
+.recipe-desc p {
+  max-height: calc(
+    4rem * var(--base)
+  ); /* Set a cut-off point for the content */
+  overflow: hidden; /* Cut off the content */
+  position: relative; /* needed for :after */
+}
+
+.recipe-desc p:after {
+  content: "";
+  background: linear-gradient(to right, transparent, var(--background) 90%);
+  display: block;
+  height: calc(1rem * var(--base) + 1px);
+  position: absolute;
+  inset-block-end: 0;
+  pointer-events: none;
+  width: 100%;
+}
+
+.recipe-banner {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.recipe-banner-h1 {
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+
+.recipe-demo-div {
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: var(--accent-color-1);
+  padding-bottom: 3%;
+}
+
+html[data-theme="dark"] .popup-content {
+  background-color: var(--accent-color-1);
+  width: 60vw !important;
+  color: var(--secondary-color);
+  border: 1px solid #9a9595;
+}
+
+html[data-theme="light"] .popup-content {
+  background-color: var(--accent-color-1);
+  width: 60vw !important;
+  color: var(--secondary-color);
+  border: 1px solid #d7d7d7;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.popup-window {
+  width: 60vw !important;
+  height: 80vh;
+  overflow-y: auto;
+  padding: 0 2%;
+}

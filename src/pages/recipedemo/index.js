@@ -6,11 +6,14 @@ import { recipelist } from "./recipes";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import headerPhoto from "../../assets/images/astro.jpg";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
 export const RecipeDemo = () => {
   const [recipeName, setRecipeName] = useState("");
   const [description, setDescription] = useState("");
   const [ingredients, setIngredients] = useState([]);
+  const [instructions, setInstructions] = useState([]);
   const [recipes, setRecipes] = useState(recipelist);
 
   const [selectedImage, setSelectedImage] = useState(null);
@@ -33,6 +36,13 @@ export const RecipeDemo = () => {
     setIngredients(String(event.target.value).split(","));
     document.getElementById("recipe-ingred-input").className = document
       .getElementById("recipe-name-input")
+      .className.replace(" error", "");
+  };
+
+  const handleInstructionChange = (event) => {
+    setInstructions(String(event.target.value).split(","));
+    document.getElementById("recipe-instruct-input").className = document
+      .getElementById("recipe-instruct-input")
       .className.replace(" error", "");
   };
 
@@ -60,7 +70,46 @@ export const RecipeDemo = () => {
         </div>
         <Card.Body className="recipe-body">
           <Card.Title>{recipeData.name}</Card.Title>
-          <Card.Text>{recipeData.description}</Card.Text>
+          <div className="recipe-desc">
+            <p>{recipeData.description}</p>
+          </div>
+          <Popup
+            trigger={<a style={{ textDecoration: "underline" }}>Cook now!</a>}
+            modal
+          >
+            {(close) => (
+              <div className="popup-window">
+                <button className="close" onClick={close}>
+                  &times;
+                </button>
+                <h2 style={{ textAlign: "center" }}>{recipeData.name}</h2>
+                <p>{recipeData.description}</p>
+                <h4>Ingredient List:</h4>
+                <ul>
+                  {recipeData.ingredients.map((ingredient, i) => {
+                    return <li key={i}>{ingredient}</li>;
+                  })}
+                </ul>
+                <h4>Instructions:</h4>
+                <ol className="instruction-list">
+                  {recipeData.instructions.map((instruction, i) => {
+                    return <li key={i}>{instruction}</li>;
+                  })}
+                </ol>
+                {recipeData.source !== "" && (
+                  <p>
+                    <a
+                      style={{ textDecoration: "italics" }}
+                      href={recipeData.source}
+                    >
+                      {" "}
+                      Recipe source{" "}
+                    </a>
+                  </p>
+                )}
+              </div>
+            )}
+          </Popup>
         </Card.Body>
       </Card>
     );
@@ -119,6 +168,21 @@ export const RecipeDemo = () => {
             </Row>
             <Row>
               <Col lg={2}>
+                <label>Recipe Instructions:</label>
+              </Col>
+              <Col lg={10}>
+                <input
+                  type="text"
+                  value={instructions}
+                  placeholder="Chicken Breast, Water, Celery, Salt"
+                  onChange={handleInstructionChange}
+                  className="recipe-form-input"
+                  id="recipe-instruct-input"
+                />
+              </Col>
+            </Row>
+            <Row>
+              <Col lg={2}>
                 <label>Recipe Photo:</label>
               </Col>
               <Col lg={10}>
@@ -170,7 +234,7 @@ export const RecipeDemo = () => {
                       inproperInput = true;
                     }
 
-                    if (recipeName === "") {
+                    if (ingredients === "") {
                       document.getElementById(
                         "recipe-ingred-input"
                       ).placeholder =
@@ -188,18 +252,20 @@ export const RecipeDemo = () => {
                       description: description,
                       favorite: false,
                       ingredients: ingredients,
-                      instructions: [],
+                      instructions: instructions,
                       img: {
                         id: uuidv4(),
                         src: URL.createObjectURL(selectedImage),
                         alt: "",
                       },
+                      source: "",
                     });
                     console.log(newList);
                     setRecipes(newList);
                     setRecipeName("");
                     setDescription("");
                     setIngredients([]);
+                    setInstructions([]);
                     setSelectedImage(null);
                   }}
                 >
