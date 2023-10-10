@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.84e7aca8.css",
-    "main.js": "/portfolio/static/js/main.c124f19e.js",
+    "main.js": "/portfolio/static/js/main.7381e9c2.js",
     "static/media/pf.jpg": "/portfolio/static/media/pf.de328215ade328176f05.jpg",
     "static/media/banner1.JPG": "/portfolio/static/media/banner1.d02e9faebe9fa179c141.JPG",
     "static/media/astro.jpg": "/portfolio/static/media/astro.ea53e2183a5a446bd9e3.jpg",
@@ -12,6 +12,6 @@
   },
   "entrypoints": [
     "static/css/main.84e7aca8.css",
-    "static/js/main.c124f19e.js"
+    "static/js/main.7381e9c2.js"
   ]
 }
