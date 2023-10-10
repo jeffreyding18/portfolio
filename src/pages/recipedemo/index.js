@@ -174,7 +174,7 @@ export const RecipeDemo = () => {
                 <input
                   type="text"
                   value={instructions}
-                  placeholder="Chicken Breast, Water, Celery, Salt"
+                  placeholder="Boil Water, Add Chicken, Add Celery, Serve!"
                   onChange={handleInstructionChange}
                   className="recipe-form-input"
                   id="recipe-instruct-input"

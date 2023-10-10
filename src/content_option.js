@@ -160,19 +160,10 @@ const dataportfolio = [
     img: "https://picsum.photos/400/?grayscale",
     description:
       "Final project for my Machine Learning bootcamp with UCSD. Comparing various models and datasets and their performance \
-      in the stock market. Still a work in progress, please check back later! ",
-    link: null,
+      in the stock market. Still a work in progress, but if you'd like to check out the current prototype, please visit the link! ",
+    link: "https://github.com/jeffreyding18/Capstone/blob/main/prototype.ipynb",
     title: "ML in the stock market",
     date: "10/2023",
-    author: "Jeffrey Ding",
-  },
-  {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "A to-do list fully built in React. Currently in the works, please check back later!",
-    link: null,
-    title: "React to-do list",
-    date: "08/2023",
     author: "Jeffrey Ding",
   },
 ];
